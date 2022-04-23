@@ -7,11 +7,7 @@ nav{
     margin-right: 20%; 
 }
 
-.logo{
-    margin-top: 20px;
-    margin-left: 20%;
-    margin-right: 20%;
-}
+
 
 li{
     display: inline;
@@ -23,6 +19,7 @@ li{
     
     float: left;
     margin-right: 40%;
+    margin-top: 10px;
     
    
 }
@@ -43,9 +40,9 @@ a{
 }
 
 body{
-    background-image: url("/Materialordner/L04/task_material/82B8B1BA-3725-47A8-A1A8-FE115E066E2D.JPG");height:400px;
+    background-image: url("/Materialordner/L04/task_material/82B8B1BA-3725-47A8-A1A8-FE115E066E2D.JPG");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: 100% 450px;
     
 
 }
@@ -64,9 +61,12 @@ main{
     margin-top: 400px;
     margin-left: 20%;
     margin-right: 20%;
+    
 }
 footer{
     background-color: #eaeaea;
+    margin-top: 100px;
+    background-size: 100%;
     
 }
 
@@ -110,7 +110,7 @@ input{
     padding-left: 50%;
 }
 p{
-    padding-left: 40px;;
+    padding-left: 40px;
 }
 
 input{
@@ -130,3 +130,18 @@ input{
     padding-bottom: 150px;
     padding-right: 150px;
 }
+
+::placeholder{
+    color: white;
+    font-weight: bold;
+}
+
+button{
+background-color: gray;
+color: white;
+font-weight: bold;
+border: none;
+margin-left: 40px;
+
+}
+
