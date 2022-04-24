@@ -39,10 +39,10 @@ a{
     margin-right: 5px;
 }
 
-body{
-    background-image: url("../../Materialordner/L04/task_material/8A083ADD-747B-4213-907F-B5E82382CE3F.JPG");
+header{
+    background-image: url("../../Materialordner/L04/task_material/82B8B1BA-3725-47A8-A1A8-FE115E066E2D.JPG");
     background-repeat: no-repeat;
-    background-size: 100% 400px;
+    background-size: cover;
     
 
 }
