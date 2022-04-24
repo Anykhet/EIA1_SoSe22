@@ -43,6 +43,7 @@ header{
     background-image: url("../../Materialordner/L04/task_material/82B8B1BA-3725-47A8-A1A8-FE115E066E2D.JPG");
     background-repeat: no-repeat;
     background-size: cover;
+    height: 400px;
     
 
 }
@@ -58,7 +59,7 @@ a:hover{
     text-decoration: underline;
 }
 main{
-    margin-top: 400px;
+    margin-top: 100px;
     margin-left: 20%;
     margin-right: 20%;
     
