@@ -68,12 +68,22 @@ header{
     44.44% {opacity: 0;}
     100% {opacity: 0;}
 }
-    
+  @-webkit-keyframes fade{
+    0% {opacity: 0;}
+    11.11% {opacity: 1;}
+    33.33% {opacity: 1;}
+    44.44% {opacity: 0;}
+    100% {opacity: 0;}
+
+  }  
     .slides img {
         opacity: 0;
         animation-name: fade;
         animation-duration: 7s;
         animation-iteration-count: infinite;
+        -webkit-animation:fade;
+        -webkit-animation-duration:7s;
+        -webkit-animation-iteration-count: infinite;
         position: absolute;
         left: 0;
         right: 0;
