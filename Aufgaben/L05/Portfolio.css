@@ -45,11 +45,41 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     height: 400px;
-    z-index: 2;
+    
 
 }
+.slides {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 400px;
+    width: 100%;
+    overflow: hidden;
+    
+ }
 
-
+ @keyframes fade {
+    0% {opacity: 0;}
+    11.11% {opacity: 1;}
+    33.33% {opacity: 1;}
+    44.44% {opacity: 0;}
+    100% {opacity: 0;}
+}
+    
+    .slides img {
+        opacity: 0;
+        animation-name: fade;
+        animation-duration: 7s;
+        animation-iteration-count: infinite;
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+    
+    .slides img:nth-child(1) {animation-delay: 0;}
+    .slides img:nth-child(2) {animation-delay: 2s;}
+    .slides img:nth-child(3) {animation-delay: 8s;}
 
 
 .active{
@@ -92,6 +122,7 @@ footer{
 h1{
     font-family: 'Merriweather', serif;
     padding-left: 5%;
+    margin: 0%;
 }
 h2{
     font-family: Arial, Helvetica, sans-serif;
