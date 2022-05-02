@@ -160,20 +160,17 @@ input{
     padding: 10px;
      
 }
-.formular{
-    width: 800px;
-    margin: auto;
-}
+
 
 .aboutme{
     padding-left: 50%;
 }
-
-
-
-input{
-    margin-left: 40px;
+.kontakt{
+    margin: auto;
+    width: 800px;
 }
+
+
 
 #input-name{
     background-color: gray;
@@ -199,7 +196,7 @@ background-color: gray;
 color: white;
 font-weight: bold;
 border: none;
-margin-left: 40px;
+
 
 }
 
