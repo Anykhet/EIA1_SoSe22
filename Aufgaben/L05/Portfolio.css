@@ -13,6 +13,7 @@ li{
     display: inline;
     float: left;
     padding: 10px;
+    color: beige;
 }
 
 .nav-container{
@@ -29,7 +30,7 @@ li{
 
 a{
     font-family: Arial, Helvetica, sans-serif;
-    color: black;
+    color: bisque;
     text-decoration: none;
 }
 .nav2{
@@ -41,6 +42,7 @@ a{
     margin-right: 5px;
     z-index: 20;
     position: relative;
+    
     
 }
 
@@ -81,7 +83,7 @@ header{
         animation-name: fade;
         animation-duration: 7s;
         animation-iteration-count: infinite;
-        -webkit-animation:fade;
+        -webkit-animation: fade;
         -webkit-animation-duration:7s;
         -webkit-animation-iteration-count: infinite;
         position: absolute;
@@ -121,8 +123,9 @@ footer{
     
 }
 
-.image{
-    padding-left: 5%;
+.mitte{
+    width: 800px;
+    margin: auto;
 }
     
 
@@ -137,16 +140,16 @@ footer{
 
 h1{
     font-family: 'Merriweather', serif;
-    padding-left: 5%;
+    
     margin-bottom: -7.5px;
 }
 h2{
     font-family: Arial, Helvetica, sans-serif;
-    padding-left: 5%;
+    
 }
 p{
     font-family: Arial, Helvetica, sans-serif;
-    padding-left: 40px;
+    
 }
 
 
@@ -155,9 +158,12 @@ input{
     background-color:gray;
     border: none;
     padding: 10px;
-    
+     
 }
- 
+.formular{
+    width: 800px;
+    margin: auto;
+}
 
 .aboutme{
     padding-left: 50%;
