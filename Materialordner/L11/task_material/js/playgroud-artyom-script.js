@@ -1,5 +1,5 @@
 window.addEventListener("load", function () {
-    var artyom = new Artyom();
+    const artyom = new Artyom();
     artyom.addCommands({
         indexes: ["erstelle Aufgabe *"],
         smart: true,

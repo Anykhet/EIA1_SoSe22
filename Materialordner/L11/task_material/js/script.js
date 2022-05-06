@@ -52,12 +52,13 @@ window.addEventListener("load", function () {
 function drawListToDOM() {
     // alle todos erst einmal aus dem DOM löschen
     todosDOMElement.innerHTML = "";
-    var _loop_1 = function (index) {
+    // das ToDo-Array durchlaufen (iterieren) und Todo für Todo in den DOM schreiben
+    for (let index = 0; index < todosText.length; index++) {
         /**
          * Neues DIV-Element erstellen (würde auch mit innerHTML = "<div class='todo'></div>" gehen,
          * die Objekt-Instansierung ist aber übersichtlicher)
          */
-        var todo = document.createElement("div");
+        let todo = document.createElement("div");
         todo.classList.add("todo");
         /**
          * Jedes Todo besteht aus etwas Markup, also aus HTML-Elementen
@@ -85,10 +86,6 @@ function drawListToDOM() {
         });
         // Bis hier hin wurde das neue Todo "zusammengebaut", jetzt wird es in den DOM gerendert.
         todosDOMElement.appendChild(todo);
-    };
-    // das ToDo-Array durchlaufen (iterieren) und Todo für Todo in den DOM schreiben
-    for (var index = 0; index < todosText.length; index++) {
-        _loop_1(index);
     }
     updateCounter();
 }
