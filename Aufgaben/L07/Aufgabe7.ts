@@ -60,7 +60,7 @@ function Europa() {
     
 }
 
-window.addEventListener("load", function(){
+window.addEventListener("load", function() {
 
 document.querySelector(".chartStarWrapper").addEventListener('click', Europa);
 document.querySelector(".germany").addEventListener('click',Deutschland);
@@ -74,8 +74,8 @@ document.querySelector(".croatia").addEventListener('click', Kroatien);
 function Deutschland() {
    
     document.getElementById("gesamt").innerHTML= DE22 + " Mio"; 
-    document.getElementById("relativ").innerHTML=RelativDE + "%"; 
-    document.getElementById("wachstumsrate").innerHTML=WachstumsrateDE +"%";
+    document.getElementById("relativ").innerHTML= RelativDE + "%"; 
+    document.getElementById("wachstumsrate").innerHTML= WachstumsrateDE +"%";
     document.getElementById("wachstumsrategesamt").innerHTML= DifferenzDE + " Mio";
     document.getElementById("Name").innerHTML= Text1 + " Deutschland " + Text2; 
 
@@ -140,20 +140,4 @@ function Kroatien() {
     document.querySelector("#it").setAttribute("class", "wrapper");
     document.querySelector("#kr").setAttribute("class", "active");
 }
-
-
-//done a7//
-
-
-
-
-
-
-
-
-
-
-
-
-
 
