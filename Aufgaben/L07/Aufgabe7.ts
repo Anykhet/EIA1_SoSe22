@@ -82,10 +82,10 @@ function Deutschland() {
 
     document.querySelector(".chart").setAttribute("style","height:" + (DE22 / EU22 * 100) + "%");
     document.querySelector(".stars").setAttribute("style", "opacity: " + "0.5"); 
-    document.querySelector("#dt").setAttribute("class", "active"); 
+    document.querySelector("#de").setAttribute("class", "active"); 
     document.querySelector("#fr").setAttribute("class", "wrapper");
     document.querySelector("#it").setAttribute("class", "wrapper");
-    document.querySelector("#cr").setAttribute("class", "wrapper");
+    document.querySelector("#kr").setAttribute("class", "wrapper");
 }
 
 
@@ -101,10 +101,10 @@ function Frankreich() {
 
     document.querySelector(".chart").setAttribute("style","height:" + (FR22 / EU22 * 100) + "%");
     document.querySelector(".stars").setAttribute("style", "opacity: " + "0.5"); 
-    document.querySelector("#dt").setAttribute("class", "wrapper"); 
+    document.querySelector("#de").setAttribute("class", "wrapper"); 
     document.querySelector("#fr").setAttribute("class", "active");
     document.querySelector("#it").setAttribute("class", "wrapper");
-    document.querySelector("#cr").setAttribute("class", "wrapper");
+    document.querySelector("#kr").setAttribute("class", "wrapper");
 }
 
 
@@ -118,10 +118,10 @@ function Italien() {
 
     document.querySelector(".chart").setAttribute("style","height:" + (IT22 / EU22 * 100) + "%");
     document.querySelector(".stars").setAttribute("style", "opacity: " + "0.5"); 
-    document.querySelector("#dt").setAttribute("class", "wrapper"); 
+    document.querySelector("#de").setAttribute("class", "wrapper"); 
     document.querySelector("#fr").setAttribute("class", "wrapper");
     document.querySelector("#it").setAttribute("class", "active");
-    document.querySelector("#cr").setAttribute("class", "wrapper");
+    document.querySelector("#kr").setAttribute("class", "wrapper");
 }
 
 
@@ -137,10 +137,10 @@ function Kroatien() {
 
     document.querySelector(".chart").setAttribute("style","height:" + (KR22 / EU22 * 100) + "%");
     document.querySelector(".stars").setAttribute("style", "opacity: " + "0.5"); 
-    document.querySelector("#dt").setAttribute("class", "wrapper"); 
+    document.querySelector("#de").setAttribute("class", "wrapper"); 
     document.querySelector("#fr").setAttribute("class", "wrapper");
     document.querySelector("#it").setAttribute("class", "wrapper");
-    document.querySelector("#cr").setAttribute("class", "active");
+    document.querySelector("#kr").setAttribute("class", "active");
 }
 
 
