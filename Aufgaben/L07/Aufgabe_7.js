@@ -40,4 +40,4 @@ console.log("Wachstumsrate seit 2012" + ":" + WachstumsrateIT12 + "%");
 console.log("Gesamtzahl Einwohnerinnen und Einwohner in Kroatien in 2022" + ":" + Kroatien22 + "Mio");
 console.log("Relativ zu Gesamtzahl in der EU 2022" + ":" + RelativKRzuEU + "%");
 console.log("Wachstumsrate seit 2012" + ":" + WachstumsrateKR12 + "%");
-//# sourceMappingURL=Aufgabe_6.js.map
+//# sourceMappingURL=Aufgabe_7.js.map
