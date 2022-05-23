@@ -1,70 +1,34 @@
-var sound = [
-    new Audio("./assets/A.mp3"),
-    new Audio("./assets/C.mp3"),
-    new Audio("./assets/F.mp3"),
-    new Audio("./assets/G.mp3"),
-    new Audio("./assets/hihat.mp3"),
-    new Audio("./assets/kick.mp3"),
-    new Audio("./assets/snare.mp3"),
-    new Audio("./assets/laugh-1.mp3"),
-    new Audio("./assets/laugh-2.mp3") 
-];
-window.addEventListener("load", function () {
-    document.querySelector(".pad").addEventListener('click', playSample);
-});
-function playSample() {
-    document.querySelector(".pad-1").addEventListener('click', Pad1);
-    function Pad1() {
-        sound[5].play();
-        sound.volume = 0.2;
-    }
-    document.querySelector(".pad-2").addEventListener('click', Pad2);
-    function Pad2() {
-        sound[6].play();
-        sound.volume = 0.2;
-    }
-    document.querySelector(".pad-3").addEventListener('click', Pad3);
-    function Pad3() {
-        sound[4].play();
-        sound.volume = 0.2;
-    }
-    document.querySelector(".pad-4").addEventListener('click', Pad4);
-    function Pad4() {
-        sound[2].play();
-        sound.volume = 0.2;
-    }
-    document.querySelector(".pad-5").addEventListener('click', Pad5);
-    function Pad5() {
-        sound[3].play();
-        sound.volume = 0.2;
-    }
-    document.querySelector(".pad-6").addEventListener('click', Pad6);
-    function Pad6() {
-        sound[0].play();
-        sound.volume = 0.2;
-    }
-    document.querySelector(".pad-7").addEventListener('click', Pad7);
-    function Pad7() {
-        sound[1].play();
-        sound.volume = 0.2;
-    }
-    document.querySelector(".pad-8").addEventListener('click', Pad8);
-    function Pad8() {
-        sound[7].play();
-        sound.volume = 0.2;
-    }
-    document.querySelector(".pad-9").addEventListener('click', Pad9);
-    function Pad9() {
-        sound[8].play();
-        sound.volume = 0.2;
-    }
-    document.querySelector(".play").addEventListener('click', Playbutton);
-    function Playbutton() {
-        setInterval(function () {
-            sound[6].play();
-            sound[5].play();
-            sound[4].play();
-        }, 500);
-    }
+// Arrays und Variablen//
+var Sounds = [("./assets/A.mp3"), ("./assets/C.mp3"), ("./assets/F.mp3"), ("./assets/G.mp3"),
+    ("./assets/hihat.mp3"), ("./assets/kick.mp3"), ("./assets/laugh-1.mp3"), ("./assets/laugh-2.mp3"),
+    ("./assets/snare.mp3")];
+var beat = [Sounds[4], Sounds[5], Sounds[8]];
+var zähler = 0;
+//Funktionen// 
+window.addEventListener("load", addClickListenersDrumPad);
+function playSample(soundQuelle) {
+    var sound = new Audio(soundQuelle);
+    sound.play();
+}
+function playBeat() {
+    setInterval(function () {
+        playSample(beat[zähler]);
+        zähler++;
+        if (zähler === 3) {
+            zähler = 0;
+        }
+    }, 500);
+}
+function addClickListenersDrumPad() {
+    document.querySelector(".pad-1").addEventListener("click", function () { playSample(Sounds[0]); });
+    document.querySelector(".pad-2").addEventListener("click", function () { playSample(Sounds[1]); });
+    document.querySelector(".pad-3").addEventListener("click", function () { playSample(Sounds[2]); });
+    document.querySelector(".pad-4").addEventListener("click", function () { playSample(Sounds[3]); });
+    document.querySelector(".pad-5").addEventListener("click", function () { playSample(Sounds[4]); });
+    document.querySelector(".pad-6").addEventListener("click", function () { playSample(Sounds[5]); });
+    document.querySelector(".pad-7").addEventListener("click", function () { playSample(Sounds[6]); });
+    document.querySelector(".pad-8").addEventListener("click", function () { playSample(Sounds[7]); });
+    document.querySelector(".pad-9").addEventListener("click", function () { playSample(Sounds[8]); });
+    document.querySelector(".play").addEventListener("click", function () { playBeat(); });
 }
 //# sourceMappingURL=Aufgabe8.js.map
