@@ -6,7 +6,7 @@ var Sounds: string [] = [("./assets/A.mp3"), ("./assets/C.mp3"), ("./assets/F.mp
 
 var beat: string []= [Sounds [4], Sounds [5], Sounds [8]];
 
-var zähler: number = 0;
+var zaehler: number = 0;
 
 
 
@@ -21,10 +21,10 @@ function playSample(soundQuelle: string): void {
 
 function playBeat(): void {
     setInterval(function (): void {
-        playSample (beat[zähler]);
-        zähler ++;
-        if (zähler === 3) {
-            zähler = 0;
+        playSample (beat[zaehler]);
+        zaehler ++;
+        if (zaehler === 3) {
+            zaehler = 0;
         }
     }, 500);
 }
@@ -40,7 +40,7 @@ document.querySelector(".pad-6").addEventListener("click", function(): void {pla
 document.querySelector(".pad-7").addEventListener("click", function(): void {playSample(Sounds[6]); });
 document.querySelector(".pad-8").addEventListener("click", function(): void {playSample(Sounds [7]); });
 document.querySelector(".pad-9").addEventListener("click", function(): void {playSample(Sounds[8]); });
-document.querySelector(".play").addEventListener("click", function (): void { playBeat(); });
+document.querySelector(".play").addEventListener("click", function (): void {playBeat(); });
 
   }
 
