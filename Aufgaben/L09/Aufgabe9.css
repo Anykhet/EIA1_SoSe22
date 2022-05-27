@@ -1,0 +1,120 @@
+html, body {
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+   
+  
+  }
+  
+  
+  
+  .pad {
+    width: 600px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: all .3s ;
+    margin-left: auto;
+    margin-right: auto;
+  
+    
+  }
+  
+  .box{
+   width: 150px;
+   height: 150px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 3px;
+   border-radius: 20%;
+   transition: all .3s;
+  }
+  
+  
+  
+  .pad-1, .pad-2, .pad-3 {
+  
+    background: linear-gradient(to bottom, #688fda, #1e60e5);
+  }
+  
+  .pad-4, .pad-5, .pad-6, .pad-7 {
+    background: linear-gradient(to bottom, #fa3993, #dc0f9b);
+  }
+  
+  .pad-8, .pad-9 {
+    background: linear-gradient(to bottom, #e8ad18, #eb7922);
+  }
+  .box:hover{
+  
+    transform: scale(1.04);
+  }
+  
+  .box:active{
+  
+    transform: scale(0.9);
+  }
+  
+  
+  
+  #play{
+  
+    width: 150px;
+    height: 150px;
+    transition: all .3s;
+  
+   }
+  
+  #play:hover{
+  
+    transform: scale(1.04);
+  }
+  
+  #play:active{
+  
+    transform: scale(0.9);
+  }
+
+  #stop:hover{
+
+    transform: scale(1.04);
+  }
+
+  #stop:active{
+
+    transform: scale(0.9);
+  
+  }
+
+  #remix:hover{
+
+ transform: scale(1.04);
+  }
+
+  #remix:active{
+
+    transform: scale(0.9);
+  }
+
+
+
+
+  #Buttons{
+   color: #fff;
+   width: 600px;
+   align-items: center;
+   flex-wrap: wrap;
+   margin: auto;
+   text-align: center;
+   font-size: 120px;
+
+  }
+
+ 
+ 
+
+ 
+

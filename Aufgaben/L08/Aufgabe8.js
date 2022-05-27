@@ -3,7 +3,7 @@ var Sounds = [("./assets/A.mp3"), ("./assets/C.mp3"), ("./assets/F.mp3"), ("./as
     ("./assets/hihat.mp3"), ("./assets/kick.mp3"), ("./assets/laugh-1.mp3"), ("./assets/laugh-2.mp3"),
     ("./assets/snare.mp3")];
 var beat = [Sounds[4], Sounds[5], Sounds[8]];
-var zähler = 0;
+var zaehler = 0;
 //Funktionen// 
 window.addEventListener("load", addClickListenersDrumPad);
 function playSample(soundQuelle) {
@@ -12,10 +12,10 @@ function playSample(soundQuelle) {
 }
 function playBeat() {
     setInterval(function () {
-        playSample(beat[zähler]);
-        zähler++;
-        if (zähler === 3) {
-            zähler = 0;
+        playSample(beat[zaehler]);
+        zaehler++;
+        if (zaehler === 3) {
+            zaehler = 0;
         }
     }, 500);
 }
