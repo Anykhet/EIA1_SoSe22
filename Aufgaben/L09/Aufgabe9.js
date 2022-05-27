@@ -38,18 +38,17 @@ function REMIX() {
 function playBeat(audio) {
     var beat = new Audio(audio);
     beat.loop = true;
-    if (document.getElementById("play").classList.contains("fa-play")) {
-        document.getElementById("play").classList.remove("fa-play");
-        document.getElementById("play").classList.add("fa-stop");
-        interval = setInterval(tonbeat, 350);
-        tuning = false;
+    if (document.querySelector("#play").classList.contains("fa-play")) {
+        document.querySelector("#play").classList.remove("fa-play");
+        document.querySelector("#play").classList.add("fa-stop");
+        interval = setInterval(mytone, 350);
     }
     else {
-        document.getElementById("play").classList.remove("fa-stop");
-        document.getElementById("play").classList.add("fa-play");
+        document.querySelector("#play").classList.remove("fa-stop");
+        document.querySelector("#play").classList.add("fa-play");
         clearInterval(interval);
     }
-    function tonbeat() {
+    function mytone() {
         playSample(beat[zaehler]);
         zaehler++;
         if (zaehler == 2) {
