@@ -9,6 +9,7 @@ var beat: string []= [Sounds [4], Sounds [5], Sounds [8]];
 var zaehler: number = 0;
 var beatremix: number;
 var interval: number = 0 ;
+var tuning: boolean= false
 
 
 //Funktionen// 
@@ -57,6 +58,7 @@ function playBeat(audio: string): void {
       document.getElementById("play").classList.remove("fa-play");
       document.getElementById("play").classList.add("fa-stop");
       interval = setInterval (tonbeat, 350);
+      tuning=false;
       
   }
     else {
@@ -93,9 +95,7 @@ function playBeat(audio: string): void {
         document.querySelector(".pad-8").addEventListener("click", function(): void {playSample(Sounds [7]); });
         document.querySelector(".pad-9").addEventListener("click", function(): void {playSample(Sounds[8]); });
             
-        document.querySelector("#play").addEventListener("click", function(): void {playBeat(beat[0]); });
-        document.querySelector("#play").addEventListener("click", function(): void {playBeat(beat[1]); });
-        document.querySelector("#play").addEventListener("click", function(): void {playBeat(beat[2]); });
+        document.querySelector("#play").addEventListener("click", function(): void {playBeat(); });
         document.querySelector("#remix").addEventListener("click", function (): void {REMIX(); });
     
             

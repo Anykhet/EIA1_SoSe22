@@ -6,6 +6,7 @@ var beat = [Sounds[4], Sounds[5], Sounds[8]];
 var zaehler = 0;
 var beatremix;
 var interval = 0;
+var tuning = false;
 //Funktionen// 
 window.addEventListener("load", addClickListenersDrumPad);
 //Funktion Pads//
@@ -41,6 +42,7 @@ function playBeat(audio) {
         document.getElementById("play").classList.remove("fa-play");
         document.getElementById("play").classList.add("fa-stop");
         interval = setInterval(tonbeat, 350);
+        tuning = false;
     }
     else {
         document.getElementById("play").classList.remove("fa-stop");
@@ -65,9 +67,7 @@ function addClickListenersDrumPad() {
     document.querySelector(".pad-7").addEventListener("click", function () { playSample(Sounds[6]); });
     document.querySelector(".pad-8").addEventListener("click", function () { playSample(Sounds[7]); });
     document.querySelector(".pad-9").addEventListener("click", function () { playSample(Sounds[8]); });
-    document.querySelector("#play").addEventListener("click", function () { playBeat(beat[0]); });
-    document.querySelector("#play").addEventListener("click", function () { playBeat(beat[1]); });
-    document.querySelector("#play").addEventListener("click", function () { playBeat(beat[2]); });
+    document.querySelector("#play").addEventListener("click", function () { playBeat(); });
     document.querySelector("#remix").addEventListener("click", function () { REMIX(); });
 }
 //# sourceMappingURL=Aufgabe9.js.map
