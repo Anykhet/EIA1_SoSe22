@@ -58,11 +58,16 @@ function myBeat(): void {
 
 function PlayBeat(): void {
   
+
+
+  //Ton soll abgespielt werden//
   if (document.getElementById("play").classList.contains("fa-play")) {
       document.getElementById("play").classList.remove("fa-play");
       document.getElementById("play").classList.add("fa-stop");
       interval = setInterval(myBeat, 350);
+   
       
+  //Stopfunktion des Play Buttons, wwird zum Stop//
   }
   else {
       document.getElementById("play").classList.remove("fa-stop");
@@ -89,6 +94,8 @@ function PlayBeat(): void {
         document.querySelector(".pad-8").addEventListener("click", function(): void {playSample(Sounds [7]); });
         document.querySelector(".pad-9").addEventListener("click", function(): void {playSample(Sounds[8]); });
             
+
+
         document.querySelector("#play").addEventListener("click", PlayBeat);
         document.querySelector("#remix").addEventListener("click", function (): void {REMIX(); });
     

@@ -42,10 +42,12 @@ function myBeat() {
         zaehler = 0;
 }
 function PlayBeat() {
+    //Ton soll abgespielt werden//
     if (document.getElementById("play").classList.contains("fa-play")) {
         document.getElementById("play").classList.remove("fa-play");
         document.getElementById("play").classList.add("fa-stop");
         interval = setInterval(myBeat, 350);
+        //Stopfunktion des Play Buttons, wwird zum Stop//
     }
     else {
         document.getElementById("play").classList.remove("fa-stop");
