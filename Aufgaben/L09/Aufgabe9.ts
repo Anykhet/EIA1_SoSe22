@@ -8,7 +8,7 @@ var beat: string []= [Sounds [4], Sounds [5], Sounds [8]];
 
 var zaehler: number = 0;
 var beatremix: number;
-var interval: number = 0 ;
+var interval: number ;
 var tuning: boolean= false
 
 
@@ -48,39 +48,33 @@ window.addEventListener("load", addClickListenersDrumPad);
   }
 
 //Funktion Play-Button//
-
-function playBeat(audio: string): void {
-    var beat: HTMLAudioElement = new Audio (audio);
-    beat.loop = true;
-    
+function myBeat(): void {
+  playSample(beat[zaehler]);
+  zaehler += 1;
+  if (zaehler > (beat.length - 1))
+      zaehler = 0;
   
-    if (document.querySelector("#play").classList.contains("fa-play")) {
-      document.querySelector("#play").classList.remove("fa-play");
-      document.querySelector("#play").classList.add("fa-stop");
-      interval = setInterval (mytone, 350);
-      
+}
+
+function PlayBeat(): void {
+  
+  if (document.getElementById("play").classList.contains("fa-play")) {
+      document.getElementById("play").classList.remove("fa-play");
+      document.getElementById("play").classList.add("fa-stop");
+      interval = setInterval(myBeat, 350);
       
   }
-    else {
-      document.querySelector("#play").classList.remove("fa-stop");
-      document.querySelector("#play").classList.add("fa-play");
+  else {
+      document.getElementById("play").classList.remove("fa-stop");
+      document.getElementById("play").classList.add("fa-play");
       clearInterval(interval);
+     
+  }
+  
+}
+
+
       
-  }
-  
-    function mytone(): void {
-    playSample(beat[zaehler]);
-    zaehler++;
-    if (zaehler == 2) { zaehler = 0; } 
-  }
-  }
-
-
-    
-
-
-
-  
   
 
     function addClickListenersDrumPad(): void {
@@ -95,7 +89,7 @@ function playBeat(audio: string): void {
         document.querySelector(".pad-8").addEventListener("click", function(): void {playSample(Sounds [7]); });
         document.querySelector(".pad-9").addEventListener("click", function(): void {playSample(Sounds[8]); });
             
-        document.querySelector("#play").addEventListener("click", function(): void {playBeat(); });
+        document.querySelector("#play").addEventListener("click", PlayBeat);
         document.querySelector("#remix").addEventListener("click", function (): void {REMIX(); });
     
             
