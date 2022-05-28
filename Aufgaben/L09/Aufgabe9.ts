@@ -24,29 +24,19 @@ window.addEventListener("load", addClickListenersDrumPad);
      }
       
 //Funktion Remix//
-    function REMIX (): void {
+function REMIX (): void {
   
-    clearInterval (interval);
-    clearInterval(beatremix);
   
-    if (document.querySelector("#stop").getAttribute("class") == "far fa-stop") {
-        document.querySelector("#play").setAttribute("class", "far fa-play");
-    }
-  
-    beat = [];
-    for (var r: number = 0; r < 5; r++) {
-      beat.push(Sounds[Math.ceil(Math.random() * 6)]);
-    }
-    beatremix = setInterval (playRemix, 300);
-  
+    document.querySelector("#remix").addEventListener("click", function (): void {
+        
+        var beatremix: number = setInterval(function (): void {
+            playSample( beat [zaehler] );
+            zaehler = Math.floor(Math.random () * 9);
+            },
+            500);
+        });
     
-    function playRemix(): void {
-            playSample (beat[zaehler]);
-            zaehler++;
-            if (zaehler == 6) { zaehler = 0; }
-        }
-  }
-
+ }
 //Funktion Play-Button//
 function myBeat(): void {
   playSample(beat[zaehler]);

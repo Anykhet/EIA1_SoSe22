@@ -16,23 +16,12 @@ function playSample(soundQuelle) {
 }
 //Funktion Remix//
 function REMIX() {
-    clearInterval(interval);
-    clearInterval(beatremix);
-    if (document.querySelector("#stop").getAttribute("class") == "far fa-stop") {
-        document.querySelector("#play").setAttribute("class", "far fa-play");
-    }
-    beat = [];
-    for (var r = 0; r < 5; r++) {
-        beat.push(Sounds[Math.ceil(Math.random() * 6)]);
-    }
-    beatremix = setInterval(playRemix, 300);
-    function playRemix() {
-        playSample(beat[zaehler]);
-        zaehler++;
-        if (zaehler == 6) {
-            zaehler = 0;
-        }
-    }
+    document.querySelector("#remix").addEventListener("click", function () {
+        var beatremix = setInterval(function () {
+            playSample(beat[zaehler]);
+            zaehler = Math.floor(Math.random() * 9);
+        }, 500);
+    });
 }
 //Funktion Play-Button//
 function myBeat() {
