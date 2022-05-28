@@ -17,7 +17,7 @@ var tuning: boolean= false
 window.addEventListener("load", addClickListenersDrumPad);
 
 
-//Funktion Pads//
+//Zentrale Funktions //
     function playSample(soundQuelle) {
         var sound = new Audio(soundQuelle);
         sound.play();
@@ -29,7 +29,7 @@ function REMIX (): void {
   
     document.querySelector("#remix").addEventListener("click", function (): void {
         
-        var beatremix: number = setInterval(function (): void {
+         beatremix = setInterval(function (): void {
             playSample( beat [zaehler] );
             zaehler = Math.floor(Math.random () * 9);
             },

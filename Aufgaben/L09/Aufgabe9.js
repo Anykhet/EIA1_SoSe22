@@ -9,7 +9,7 @@ var interval;
 var tuning = false;
 //Funktionen// 
 window.addEventListener("load", addClickListenersDrumPad);
-//Funktion Pads//
+//Zentrale Funktions //
 function playSample(soundQuelle) {
     var sound = new Audio(soundQuelle);
     sound.play();
@@ -17,7 +17,7 @@ function playSample(soundQuelle) {
 //Funktion Remix//
 function REMIX() {
     document.querySelector("#remix").addEventListener("click", function () {
-        var beatremix = setInterval(function () {
+        beatremix = setInterval(function () {
             playSample(beat[zaehler]);
             zaehler = Math.floor(Math.random() * 9);
         }, 500);
