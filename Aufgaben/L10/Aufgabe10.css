@@ -1,0 +1,60 @@
+body {
+    text-align: center;
+    background-image: url(../../Materialordner/L10/IMG_0021.JPG);
+    font-size:25px;
+}
+
+#inputText {
+    
+    width: 595px;
+    padding: 15px;
+    height: 30px;
+    border-radius: 5px;
+    border-color: black;
+    
+    
+}
+
+.taskText {
+    padding: 5px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    width: 600px;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: white;
+    
+}
+
+
+.fa-trash-alt{
+    position: absolute;
+    opacity: 60%;
+    font-size: 30px;
+    color:gray;
+    cursor: pointer;
+    left: 950px;
+    margin-top: 5px;
+}
+
+ .fa-trash-alt:hover {
+    cursor: pointer;
+    opacity: 100%;
+    color: black;
+
+ }
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
