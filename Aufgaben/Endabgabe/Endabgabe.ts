@@ -140,3 +140,4 @@ function neuerSatz() {
         document.getElementById("punkteGesamt").innerHTML = punkte + " Punkte!";
     }
 }
+//
